@@ -78,7 +78,6 @@ class LabEightTests {
 		
 		input.left = new TreeNode(31);
 		input.left.right = new TreeNode(32);
-		input.left.right.left = new TreeNode(89);
 		input.right = new TreeNode(11);
 		input.right.right = new TreeNode(43);
 		input.right.left = new TreeNode(99);
@@ -91,7 +90,7 @@ class LabEightTests {
 		
 		// System.out.println(Arrays.toString(actual));
 		
-		int[] expected = {23, 11, 43, 89};
+		int[] expected = {23, 11, 43};
 		
 		assertArrayEquals(expected, actual);
 	}
